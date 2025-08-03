@@ -33,20 +33,6 @@ cargo build --release
 ./target/release/rovernet
 ```
 
-## 🔧 Example Plugin
-
-```rust
-use rovernet::prelude::*;
-
-#[plugin]
-pub struct MyPlugin;
-
-#[event_handler]
-async fn on_player_join(event: PlayerJoinEvent) {
-    event.player.send_message("Welcome to RoverNet!");
-}
-```
-
 ## 📚 Documentation
 
 Coming soon - We're working on comprehensive docs!
